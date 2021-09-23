@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css'
+import './App.css';
+const Sequelize = require('sequelize')
 
 function App() {
     return (
@@ -7,21 +8,50 @@ function App() {
             <div className="register">
                 <h1>Registratiion</h1>
                 <label>Username</label>
-                <input type="text" placeholder="Username..."></input>
+                <input 
+                    type="text" 
+                    placeholder="Username..."
+
+
+                    ></input>
                 <label>Password</label>
-                <input type="password" placeholder="Password..."></input>
-                <button className="regButton">Register</button>
+                <input 
+                    type="password" 
+                    placeholder="Password..."
+                    
+                    
+                    ></input>
+                <button className="regButton" onClick={registerClickListener}>Register</button>
             </div>
             <div className="login">
                 <h1>Login</h1>
                 <label>Username</label>
-                <input type="text" placeholder="Username..."></input>
+                <input 
+                    type="text" 
+                    placeholder="Username..."
+                    
+                    
+                    ></input>
                 <label>Password</label>
-                <input type="password" placeholder="Password..."></input>
-                <button className="logButton">Login</button>
+
+                <input 
+                    type="password" 
+                    placeholder="Password..."
+
+
+                    ></input>
+                <button className="logButton" onClick={loginClickListener}>Login</button>
             </div>
         </div>
     );
+}
+
+function loginClickListener() {
+    alert("lorem ipsum") //placeholder
+}
+
+function registerClickListener() {
+    alert("lorem ipsum but register") //placeholer
 }
 
 export default App;
