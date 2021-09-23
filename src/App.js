@@ -5,7 +5,7 @@ function App() {
     return (
         <div className="App">
             <div className="register">
-                <h1>Registration</h1>
+                <h1>Registratiion</h1>
                 <label>Username</label>
                 <input type="text" placeholder="Username..."></input>
                 <label>Password</label>
