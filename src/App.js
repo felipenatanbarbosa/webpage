@@ -46,6 +46,13 @@ function App() {
     );
 }
 
+// const databaseCreate = await Credential.create({
+//     username: 'abc',
+//     password: '123',
+// })
+
+// console.log(databaseCreate)
+
 function loginClickListener() {
     alert("lorem ipsum") //placeholder
 }
@@ -54,4 +61,4 @@ function registerClickListener() {
     alert("lorem ipsum but register") //placeholer
 }
 
-export default App;
+export default App; 

@@ -4,9 +4,9 @@ import './Header.css'
 function Header() {
     return (
         <div className="headerNavigation">
-            <footer>
+            <header>
                 <h1>teste</h1>
-            </footer>
+            </header>
         </div>
     )
 }
