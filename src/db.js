@@ -1,15 +1,6 @@
 //database
 
-import React from "react";
-const Sequelize = require('sequelize')
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('crud', 'root', {dialect: 'mysql', host: 'localhost'});
 
-const colunas = {
-    username: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    password: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-}
+module.exports = sequelize;
