@@ -1,12 +1,27 @@
+import React from 'react';
 import './App.css'
-import React from 'react'
 
 function App() {
     return (
-        <div className="LoginApp">
-            <h1>Login Application Header</h1>
+        <div className="App">
+            <div className="register">
+                <h1>Registration</h1>
+                <label>Username</label>
+                <input type="text" placeholder="Username..."></input>
+                <label>Password</label>
+                <input type="password" placeholder="Password..."></input>
+                <button className="regButton">Register</button>
+            </div>
+            <div className="login">
+                <h1>Login</h1>
+                <label>Username</label>
+                <input type="text" placeholder="Username..."></input>
+                <label>Password</label>
+                <input type="password" placeholder="Password..."></input>
+                <button className="logButton">Login</button>
+            </div>
         </div>
-    )
+    );
 }
 
 export default App;
