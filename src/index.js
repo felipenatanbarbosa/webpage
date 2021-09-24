@@ -5,7 +5,7 @@ import Header from './Header'
 
 (async () => {
   const database = require('./db');
-  const Credentials = require('./usuario');
+  // const Credentials = require('./usuario');
 
   try {
       const resultado = await database.sync();
@@ -18,8 +18,8 @@ import Header from './Header'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <Header />
+    <App /> 
   </React.StrictMode>,
   document.getElementById('root')
 );

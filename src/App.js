@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-const Sequelize = require('sequelize')
 
 function App() {
     return (
